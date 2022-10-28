@@ -13,7 +13,19 @@
             <div class="header__head flex">
                 <div class="header__head__logo flex">
                     <a href="#"><img src="../../assets/icons/logo.svg" alt="logo"></a>
-                    <img src="../../assets/icons/Menu_burger.svg" alt="Menu_burger">
+                    <div  class="burger" onclick="openBurger()">
+                        <img src="../../assets/icons/Menu_burger.svg" alt="Menu_burger">
+                    </div>
+                    <div class="burger-content">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Тарифы и цены</a></li>
+                            <li><a href="#">База респондентов</a></li>
+                            <li><a href="#">Демо-версия</a></li>
+                            <li><a href="#">Конструктор тестов</a></li>
+                            <li><a href="../Contact/index.html" target="_blank">контакты</a></li>
+                        </ul>
+                    </div>
                     <p><span>Анкетолог</span><br> Конструктор анкет</p>
                 </div>
                 <ul class="header__head__nav flex">
@@ -520,6 +532,11 @@
                 </div>
             </div> 
         </div>
-    </footer>    
+    </footer>
+    <script>
+        function openBurger() {
+            document.querySelector('.burger-content').classList.toggle('active')
+        }
+    </script>    
 </body>
 </html>

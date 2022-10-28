@@ -391,11 +391,31 @@ header {
   background: linear-gradient(0deg, rgb(89, 105, 122), rgb(88, 104, 121));
 }
 .header__head__logo {
+  position: relative;
   gap: 20px;
   padding: 24px 74px 24px 20px;
   background: #FFFFFF;
   border-radius: 0px 40px 40px 0px;
   align-items: center;
+}
+.header__head__logo .burger-content {
+  position: absolute;
+  left: 60px;
+  background: #FFFFFF;
+  max-height: 550px;
+  padding: 20px;
+  transition: 0.3s;
+  z-index: 55;
+  visibility: hidden;
+  width: 375px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 124%;
+  color: #FFFFFF;
+}
+.header__head__logo .active {
+  transform: translateY(125px);
+  visibility: visible;
 }
 .header__head__logo p {
   font-family: "Montserrat-Medium";

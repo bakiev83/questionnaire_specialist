@@ -17,11 +17,31 @@ header {
         z-index: 5;
         background: linear-gradient(0deg, rgba(89, 105, 122,), rgba(88, 104, 121,));
         &__logo {
+            position: relative;
             gap: 20px;
             padding: 24px 74px 24px 20px;
             background: #FFFFFF;
             border-radius: 0px 40px 40px 0px;
-            align-items: center;
+            align-items: center;            
+            .burger-content {
+                position: absolute;
+                left:60px;
+                background: #FFFFFF;
+                max-height: 550px;
+                padding: 20px;
+                transition: 0.3s;
+                z-index: 55;
+                visibility: hidden;
+                width: 375px;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 124%;
+                color: #FFFFFF;
+            }
+            .active {
+                transform: translateY(125px);
+                visibility: visible;
+            }
             p {
                 font-family: 'Montserrat-Medium';
                 font-size: 10px;
