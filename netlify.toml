@@ -2,3 +2,6 @@
   from = "/*"
   to = "./pages/Home/index.html"
   status = 200
+
+
+  
